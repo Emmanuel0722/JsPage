@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,7 +27,7 @@
   
   header{
     height: 100vh;
-    background-image: linear-gradient(to top, rgba(48, 208, 208, 0.5) 0%, rgba(51, 8, 103, 0.5) 100%), url(/imagenes/codigoheader4.jpg);
+    background-image: linear-gradient(to top, rgba(48, 208, 208, 0.5) 0%, rgba(51, 8, 103, 0.5) 100%), url(./imagenes/codigoheader4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
