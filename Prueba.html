@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title> -->
+ 
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Ejemplo Desplegable</title>
+
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/'-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="./Test.css">
+  
+</head>
+<body>
+  <div class='dropdown'>
+		<div class='title pointerCursor'>Seleccione una opción <i class="fa fa-angle-right"></i></div>
+		
+		<div class='menu pointerCursor hide'>
+			<div class='option' id='option1'>Opcion 1</div>
+			<div class='option' id='option2'>Opcion 2</div>
+			<div class='option' id='option3'>Opcion 3</div>
+			<div class='option' id='option4'>Opcion 4</div>
+		</div>
+
+	</div>
+	<span id='result'>El resultado es: </span>
+
+  <script>
+
+		//obtiene elementos
+		const dropdownTitle = document.querySelector('.dropdown .title');
+
+		//vincula listeners a estos elementos
+		dropdownTitle.addEventListener('click', toggleMenuDisplay);
+
+		function toggleClass(elem,className){
+		if (elem.className.indexOf(className) !== -1){
+				elem.className = elem.className.replace(className,'');
+			}
+			else{
+				elem.className = elem.className.replace(/\s+/g,' ') +  ' ' + className;
+			}
+			
+			return elem;
+		}
+
+		function toggleDisplay(elem){
+			const curDisplayStyle = elem.style.display;			
+						
+			if (curDisplayStyle === 'none' || curDisplayStyle === ''){
+				elem.style.display = 'block';
+			}
+			else{
+				elem.style.display = 'none';
+			}
+		}
+
+
+		function toggleMenuDisplay(e){
+			const dropdown = e.currentTarget.parentNode;
+			const menu = dropdown.querySelector('.menu');
+
+			toggleClass(menu,'hide');
+		}
+
+  </script>
+</body>
+</html>
