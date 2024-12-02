@@ -5,54 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imagenes/monitor.png" type="image/x-icon">
 
-    <title>EA Technology</title>
+    <title>Emmanuel's Portfolio</title>
 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./index.css">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&family=Roboto:wght@100&display=swap" rel="stylesheet">
-
 </head>
 <body>
 
   <header class="header" id="Inicio">
     <img src="./imagenes/IBurger.svg" alt="Menu" class="hamburger" >
 
-    <!-- IMAGENES: https://unsplash.com/es -->
-    <!-- ILUSTRACIONES: https://www.manypixels.co/gallery -->
-    <!-- ICONOS: https://boxicons.com/ -->
-    <!-- https://webgradients.com/ -->
-
     <nav class="menu-navegacion">
         <a href="#Inicio">Inicio</a>
         <a href="#Servicio">Conocimientos Informáticos</a>
-        <a href="#Portafolio">Portafolio</a>
-        <a href="#Expertos">Expertos</a>
+        <a href="#Portafolio">Proyectos</a>
+        <a href="#Expertos">Habilidades</a>
         <a href="#Contactos">Contactos</a>
     </nav>
 
     <div class="contenedor head">
-        <h1 class="titulo">EA Technology</h1>
-        <p class="copy">
-          Somos expertos en hacer realidad tus sueños!
-        </p>
+        <img class="pitImg" src="./img/pict.png" alt="VICTOR EMMANUEL ACOSTA" >
+        <h1 class="titulo">Víctor Emmanuel Acosta</h1>
+        <p class="copy">DESARROLLADOR DE SOFTWARE</p>
+        <img class="FlechaAbajo" src="./imagenes/FlechaAbajo.png" alt="Abajo">
     </div>
   </header>
 
   <main>
-    <section class="contenedor" id="Servicio">
+    <section class="contenedor" >
 
       <h2 class="subtitulo">Conocimientos Informáticos</h2>
       
-      <div class="contenedor-servicio">
+      <div class="contenedor-servicio hide" id="Servicio" >
 
         <div class="containerImg">
           <img src="./imagenes/Web Dev.png" alt="Dev">
           <img src="./imagenes/react-js.png" alt="Dev">
-          <!-- <img src="./imagenes/justmock__net_770.png" alt="Dev"> -->
+          <img src="./imagenes/justmock__net_770.png" alt="Dev">
         </div>
 
         <div class="checklist-servicio">
@@ -110,9 +105,18 @@
               .NET Framework.
             </p>
           </div>
+          
+          <div class="service">
+            <h3 class="n-service"><span class="number">7</span> TypeScript</h3>
+            <p class="P-parrafo">
+              Es un lenguaje de programación libre y de código abierto desarrollado y mantenido
+              por Microsoft. Es un superconjunto de JavaScript, que esencialmente añade tipos
+              estáticos y objetos basados en clases.
+            </p>
+          </div>
 
           <div class="service">
-            <h3 class="n-service"><span class="number">7</span> Sql Server</h3>
+            <h3 class="n-service"><span class="number">8</span> Sql Server</h3>
             <p class="P-parrafo">
               Microsoft SQL Server es un sistema de gestión de base de datos relacional,
               desarrollado por la empresa Microsoft. El lenguaje de desarrollo utilizado es
@@ -121,29 +125,26 @@
             </p>
           </div>
 
+          <div class="service">
+            <h3 class="n-service"><span class="number">9</span> English B1</h3>
+            <p class="P-parrafo">
+              English level B1 is the third level of English in the Common European Framework
+              of Reference (CEFR), a definition of different language levels written by the
+              Council of Europe. In everyday speech, this level would be called “intermediate”,
+              and indeed, that is the official level descriptor in the CEFR.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="gallery" id="Portafolio">
-      <!-- <div class="contenedor">
-          <h2 id="javaScript" class="subtitulo">JavaScript</h2>
-          <div id="jsContainer" class="contenedor-galeria hide">
-            <img src="./imagenes/Capture1.PNG" alt="https://emmanuel0722.github.io/JsSearch/" class="img-galeria">
-            <img src="./imagenes/task.PNG" alt="https://emmanuel0722.github.io/JsTasks/" class="img-galeria">
-            <img src="./imagenes/JsSitiosFav.PNG" alt="https://emmanuel0722.github.io/JsSitiosFav/" class="img-galeria">
-            <img src="./imagenes/prodruct.png" alt="https://emmanuel0722.github.io/JsProduct/" class="img-galeria">
-            <img src="./imagenes/JsPokedex.png" alt="https://emmanuel0722.github.io/JsPokedex/" class="img-galeria">
-            <img src="./imagenes/YesNop.PNG" alt="https://emmanuel0722.github.io/JsYesNop/" class="img-galeria">
-          </div>
-      </div> -->
-      
-    </section>
-
     <section class="gallery1" id="Portafolio">
       <div class="contenedor">
-          <h2 class="subtitulo">React</h2>
-          <div class="contenedor-galeria">
+          <h2 class="subtitulo-Proyectos">Proyectos</h2>
+          <div class="contenedor-galeria hide">
+              <img src="./imagenes/tiempo.PNG" alt="https://emmanuel0722.github.io/RasctWeathermap/" class="img-galeria">
+              <img src="./imagenes/taskReact.PNG" alt="https://emmanuel0722.github.io/TodoListReact/" class="img-galeria">
+              <img src="./imagenes/TsReactPokedex.PNG" alt="https://emmanuel0722.github.io/PokeReactTs/" class="img-galeria">
               <img src="./imagenes/Capture1.PNG" alt="https://emmanuel0722.github.io/JsSearch/" class="img-galeria">
               <img src="./imagenes/task.PNG" alt="https://emmanuel0722.github.io/JsTasks/" class="img-galeria">
               <img src="./imagenes/JsSitiosFav.PNG" alt="https://emmanuel0722.github.io/JsSitiosFav/" class="img-galeria">
@@ -154,6 +155,8 @@
       </div>
     </section>
 
+
+    <!-- ESTE ES EL MODAL.... -->
     <section class="imagen-light">
       <img src="./imagenes/IClose.svg" alt="" class="close">
       <!-- <img src="/imagenes/codigoheader8.jpg" alt="" class="agregar-imagen"> -->
@@ -167,22 +170,22 @@
     </section>
     
     <section class="contenedor" id="Expertos">
-      <h2 class="subtitulo">Expertos en:</h2>
-      <section class="experts">
+      <h2 class="subtitulo-Expert">Habilidades</h2>
+      <section class="experts hide">
 
         <div class="cont-expert">
           <img src="./imagenes/Web Developer.png" alt="" >
-          <h3 class="n-expert">Analytics</h3>
+          <h3 class="n-expert">Desarrollador de Software</h3>
         </div>
 
         <div class="cont-expert">
           <img src="./imagenes/Web Developer1.png" alt="" >
-          <h3 class="n-expert">SEO</h3>
+          <h3 class="n-expert">Analista de Calidad De Software</h3>
         </div>
 
         <div class="cont-expert">
           <img src="./imagenes/devel.png" alt="" >
-          <h3 class="n-expert">Security</h3>
+          <h3 class="n-expert">Soporte Tecnico</h3>
         </div>
 
       </section>
@@ -194,29 +197,31 @@
   <footer id="Contactos">
     <div class="contenedor footer-content">
       <div class="contact-us">
-        <h2 class="brand">Emmanuel Design</h2>
-        <p>Somos expertos en hacer realidad tus sueños.</p>
+        <h2 class="brand">Víctor Emmanuel Acosta</h2>
+        <p>DESARROLLADOR DE SOFTWARE</p>
+        <p>CEL. 829-726-9560</p>
       </div>
 
       <div class="social-media">
 
-        <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank" class="social-media-icon">
+        <!-- <a href="https://mail.google.com/mail/u/1/#inbox" title="Descarga mi Curriculum Vitae" id="downloadBtn" target="_blank" class="social-media-icon"> -->
+        <a title="Descarga mi Curriculum Vitae" id="downloadBtn" class="social-media-icon">
           <i class='bx bxs-file-pdf'></i>
         </a>
 
-        <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank" class="social-media-icon">
+        <a href="https://www.linkedin.com/in/v%C3%ADctor-emmanuel-acosta-8a5956309/" title="Mi Linkedin" target="_blank" class="social-media-icon">
           <i class='bx bxl-linkedin-square'></i>
         </a>
         
-        <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank" class="social-media-icon">
+        <!-- <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank" class="social-media-icon">
           <i class='bx bxl-gmail'></i>
         </a>
 
         <a href="https://www.facebook.com/enmanuel.acosta1" target="_blank" class="social-media-icon" >
           <i class='bx bxl-facebook'></i>
-        </a>
+        </a> -->
 
-        <a href="https://github.com/Emmanuel0722" target="_blank" class="social-media-icon" >
+        <a href="https://github.com/Emmanuel0722" title="Mi GitHub" target="_blank" class="social-media-icon" >
           <i class='bx bxl-github' ></i>
         </a>
 

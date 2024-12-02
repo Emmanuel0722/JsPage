@@ -11,6 +11,9 @@ const aEnlace = [
   "https://emmanuel0722.github.io/JsSitiosFav/",
   "https://emmanuel0722.github.io/JsPokedex/",
   "https://emmanuel0722.github.io/JsYesNop/",
+  "https://emmanuel0722.github.io/RasctWeathermap/",
+  "https://emmanuel0722.github.io/TodoListReact/",
+  "https://emmanuel0722.github.io/PokeReactTs/",
 ];
 
 imagenes.forEach((imagen) => {

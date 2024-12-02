@@ -1,17 +1,5 @@
 const hamburguer = document.querySelector(".hamburger");
 const menu = document.querySelector(".menu-navegacion");
-const jsContainer = document.getElementById("jsContainer");
-const javaScript = document.getElementById("javaScript");
-// const contenedor = document.getElementById("contenedor");
-
-//obtiene elementos
-// const contenedor = document.querySelector('.dropdown .title');
-
-//vincula listeners a estos elementos
-
-// const contenedorParent = javaScript.parentElement;
-
-javaScript.addEventListener("click", toggleMenuDisplay);
 
 function toggleClass(elem, className) {
   if (elem.className.indexOf(className) !== -1) {
@@ -40,9 +28,6 @@ function toggleMenuDisplay(e) {
   toggleClass(contenedorGaleria, "hide");
 }
 
-// console.log(menu);
-// console.log(hamburguer);
-
 hamburguer.addEventListener("click", () => {
   menu.classList.toggle("spread");
 });
@@ -57,21 +42,40 @@ window.addEventListener("click", (e) => {
   }
 });
 
-// function toggleClass(elemet, className) {}
+document.querySelector('.subtitulo').addEventListener('click', function() {
+  const menu = document.querySelector('.contenedor-servicio');
+  menu.classList.toggle('hide');
+  if (menu.classList.contains('hide')) {
+      menu.style.maxHeight = '0';
+  } else {
+      menu.style.maxHeight = menu.scrollHeight + 'px';
+  }
+});
 
-// javaScript.addEventListener("click", () => {
-//   // CAMBIAR LA CLASE DEL CONTENEDOR...
-//   jsContainer.classList.toggle("hide");
-//   if (jsContainer.className == "contenedor-galeria hide") {
-//     setTimeout(() => {
-//       jsContainer.parentElement.classList.toggle("hideSecond");
-//       jsContainer.classList.remove("hide");
-//     }, 1500);
-//   } else {
-//     setTimeout(() => {
-//       jsContainer.parentElement.classList.toggle("contenedor-galeria");
-//       jsContainer.classList.remove("hide");
-//       console.log("Abajo");
-//     }, 500);
-//   }
-// });
+document.querySelector('.subtitulo-Proyectos').addEventListener('click', function() {
+  const menu = document.querySelector('.contenedor-galeria');
+  menu.classList.toggle('hide');
+  if (menu.classList.contains('hide')) {
+      menu.style.maxHeight = '0';
+  } else {
+      menu.style.maxHeight = menu.scrollHeight + 'px';
+  }
+});
+
+document.querySelector('.subtitulo-Expert').addEventListener('click', function() {
+  
+  const menu = document.querySelector('.experts');
+  menu.classList.toggle('hide');
+  if (menu.classList.contains('hide')) {
+      menu.style.maxHeight = '0';
+  } else {
+      menu.style.maxHeight = menu.scrollHeight + 'px';
+  }
+});
+
+document.getElementById("downloadBtn").addEventListener("click", function() { 
+  const link = document.createElement("a");
+  link.href = "./documents/curriculo.pdf";
+  link.download = "EmmanuelAcosta.pdf";
+  link.click();
+})
