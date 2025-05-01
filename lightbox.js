@@ -14,6 +14,13 @@ const aEnlace = [
   "https://emmanuel0722.github.io/RasctWeathermap/",
   "https://emmanuel0722.github.io/TodoListReact/",
   "https://emmanuel0722.github.io/PokeReactTs/",
+  "https://persontestapi.somee.com/index.html",
+  "https://usercontrol.somee.com/index.html",
+  "https://emmanuel0722.github.io/PersonApp/",
+  "https://emmanuel0722.github.io/ReactUserControl/",
+  "https://emmanuel0722.github.io/VueUserControl/",
+  "https://emmanuel0722.github.io/vanangulartest/browser/",
+  "https://emmanuel0722.github.io/TestReact/"
 ];
 
 imagenes.forEach((imagen) => {
