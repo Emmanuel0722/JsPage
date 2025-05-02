@@ -73,6 +73,19 @@ document.querySelector('.subtitulo-Expert').addEventListener('click', function()
   }
 });
 
+document.querySelector('.subtitulo-Cert').addEventListener('click', function() {
+  
+  const menu = document.querySelector('.certs');
+  menu.classList.toggle('hide');
+  if (menu.classList.contains('hide')) {
+      menu.style.maxHeight = '0';
+  } else {
+      menu.style.maxHeight = menu.scrollHeight + 'px';
+      menu.style.maxHeight = '300px';
+      
+  }
+});
+
 document.getElementById("downloadBtn").addEventListener("click", function() { 
   const link = document.createElement("a");
   link.href = "./documents/curriculo.pdf";
