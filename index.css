@@ -45,6 +45,11 @@ header{
 
 }
 
+.lowrrow{
+  display: flex;
+  justify-content: center;
+}
+
 .pitImg{
   width: 300px;
   border-radius: 100%;
