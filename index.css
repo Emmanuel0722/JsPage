@@ -300,7 +300,7 @@ header{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 
   max-height: 0;
   overflow: hidden;
