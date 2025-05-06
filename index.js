@@ -80,9 +80,8 @@ document.querySelector('.subtitulo-Cert').addEventListener('click', function() {
   if (menu.classList.contains('hide')) {
       menu.style.maxHeight = '0';
   } else {
-      menu.style.maxHeight = menu.scrollHeight + 'px';
+      // menu.style.maxHeight = menu.scrollHeight + 'px';
       menu.style.maxHeight = '450px';
-      
   }
 });
 

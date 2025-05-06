@@ -20,8 +20,11 @@ const aEnlace = [
   "https://emmanuel0722.github.io/ReactUserControl/",
   "https://emmanuel0722.github.io/VueUserControl/",
   "https://emmanuel0722.github.io/vanangulartest/browser/",
-  "https://emmanuel0722.github.io/TestReact/"
+  "https://emmanuel0722.github.io/TestReact/",
+  "https://github.com/Emmanuel0722/departmentapp",
+  "https://github.com/Emmanuel0722/ApiTestCore"
 ];
+
 
 imagenes.forEach((imagen) => {
   imagen.addEventListener("click", () => {
