@@ -25,7 +25,6 @@ const aEnlace = [
   "https://github.com/Emmanuel0722/ApiTestCore"
 ];
 
-
 imagenes.forEach((imagen) => {
   imagen.addEventListener("click", () => {
     aparecerImagen(imagen.getAttribute("src"), imagen.getAttribute("alt"));
