@@ -128,7 +128,7 @@ const listSkils = [
       + 'interfaces de usuarios con el objetivo de facilitar el desarrollo de aplicaciones '
       + 'en una solo pagina. Es mantenido por Facebook y la comunidad de software libre.'
   },
-  {
+    {
     nameSkils: 'TypeScript',
     desc: 'Es un lenguaje de programación libre y de código abierto desarrollado y mantenido '
       + 'por Microsoft. Es un superconjunto de JavaScript, que esencialmente añade tipos '
